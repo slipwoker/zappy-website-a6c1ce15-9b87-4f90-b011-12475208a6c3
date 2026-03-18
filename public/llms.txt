@@ -1,0 +1,79 @@
+# Business — Generative Engine Optimization Map
+
+---
+
+## Pages
+
+### בית
+https://example.com
+חנות בגדים אונליין שתשנה את הארון שלך לנצח! Boutiquezinab מציעה קולקציות עדכניות לנשים בכל המידות. קני עכשיו וקבלי משלוח מהיר לביתך.
+
+### אודות
+https://example.com/about
+Boutiquezinab נולדה מתוך אהבה אמיתית לאופנה נשית. גלי מי אנחנו, מה מניע אותנו ולמה אלפי נשים בוחרות בנו כחנות הבגדים האהובה עליהן בישראל.
+
+### לוקבוק
+https://example.com/lookbook
+לוקבוק עונתי מלא השראה! גלי קומבינציות לבוש מנצחות מחנות הבגדים האונליין שלנו במידות גדולות וקטנות. כל תמונה היא סיבה חדשה לקנות עוד.
+
+### צור קשר
+https://example.com/contact
+יש שאלה על מידות, משלוח או קולקציה? צוות Boutiquezinab כאן בשבילך! צרי קשר עכשיו ותקבלי שירות אישי מחנות הבגדים הכי אוהבת בישראל.
+
+### Products
+https://example.com/products
+המוצרים שלנו - Boutiquezinab
+
+### Cart
+https://example.com/cart
+עגלת הקניות שלך
+
+### Checkout
+https://example.com/checkout
+תשלום
+
+### Login
+https://example.com/login
+התחברות לקוחות
+
+### Account
+https://example.com/account
+החשבון שלי
+
+### Order Success
+https://example.com/order-success
+תודה על ההזמנה
+
+### Product Detail
+https://example.com/product/:slug
+פרטי המוצר - Boutiquezinab
+
+### Category
+https://example.com/category/:slug
+מוצרים - Boutiquezinab
+
+## Legal & Policy
+
+### Privacy Policy
+https://example.com/privacy
+Information about how user data is collected, stored, and protected.
+
+### Terms & Conditions
+https://example.com/terms
+Legal terms describing service usage, rights, and policies.
+
+### Accessibility Statement
+https://example.com/accessibility
+Information about WCAG compliance and accessibility features.
+
+---
+
+# Business Context (for LLM understanding)
+
+## About Business
+---
+
+# Additional Resources
+
+- **Sitemap**: https://example.com/sitemap.xml
+- **Robots.txt**: https://example.com/robots.txt
