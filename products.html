@@ -371,7 +371,7 @@
     </nav>
   <main class="page-container ecommerce-page">
     
-        <section class="products-section">
+        <section class="products-section" id="temp-section-1773830641479">
           <h1>המוצרים שלנו</h1>
           <div class="products-toolbar" id="products-toolbar" style="display:none;">
             <button class="sidebar-toggle-btn" id="sidebar-toggle-btn" style="display:none;" aria-label="סינון">
@@ -405,6 +405,276 @@
             </div>
           </div>
         </section>
+
+
+<section style="width:100%;max-width:100%;box-sizing:border-box;background:var(--bg-light);padding:80px 0;position:relative;overflow:hidden;" data-zappy-section="true" class="section" id="layout-1773830640802">
+<style>
+  .cards-section-zinab {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    background: var(--bg-light);
+    padding: 80px 0 120px;
+    overflow: hidden;
+  }
+
+  .cards-section-zinab::before {
+    content: '';
+    position: absolute;
+    top: -180px;
+    left: -180px;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(168,92,98,0.08) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cards-section-zinab::after {
+    content: '';
+    position: absolute;
+    bottom: -150px;
+    right: -150px;
+    width: 450px;
+    height: 450px;
+    border-radius: 50%;
+    background: radial-gradient(circle, rgba(185,167,146,0.12) 0%, transparent 70%);
+    pointer-events: none;
+  }
+
+  .cards-inner {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  .zinab-card {
+    position: relative;
+    background: #fff;
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-base), box-shadow var(--transition-base);
+    display: flex;
+    flex-direction: column;
+    min-height: 340px;
+  }
+
+  .zinab-card:hover {
+    transform: translateY(-10px) rotate(-0.5deg);
+    box-shadow: 0 20px 60px rgba(31,35,40,0.18);
+  }
+
+  .zinab-card:nth-child(2) {
+    transform: translateY(40px);
+  }
+
+  .zinab-card:nth-child(2):hover {
+    transform: translateY(30px) rotate(0.5deg);
+    box-shadow: 0 20px 60px rgba(31,35,40,0.18);
+  }
+
+  .zinab-card-accent-bar {
+    height: 6px;
+    background: var(--gradient-primary);
+    width: 100%;
+    display: block;
+  }
+
+  .zinab-card:nth-child(2) .zinab-card-accent-bar {
+    background: var(--gradient-gold-accent);
+  }
+
+  .zinab-card-body {
+    padding: 2.8rem 2.5rem 2.5rem;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    direction: rtl;
+  }
+
+  .zinab-card-number {
+    font-family: var(--font-heading);
+    font-size: 4.5rem;
+    font-weight: 700;
+    line-height: 1;
+    color: var(--border-light);
+    margin-bottom: 0.5rem;
+    display: block;
+    user-select: none;
+    transition: color var(--transition-base);
+  }
+
+  .zinab-card:hover .zinab-card-number {
+    color: rgba(168,92,98,0.15);
+  }
+
+  .zinab-card:nth-child(2):hover .zinab-card-number {
+    color: rgba(185,167,146,0.25);
+  }
+
+  .zinab-card-title {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin: 0 0 1.2rem;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+  }
+
+  .zinab-card-divider {
+    width: 50px;
+    height: 2px;
+    background: var(--accent);
+    margin-bottom: 1.2rem;
+    margin-right: 0;
+    margin-left: auto;
+    transition: width var(--transition-base);
+  }
+
+  .zinab-card:nth-child(2) .zinab-card-divider {
+    background: var(--secondary);
+  }
+
+  .zinab-card:hover .zinab-card-divider {
+    width: 80px;
+  }
+
+  .zinab-card-text {
+    font-family: var(--font-body);
+    font-size: 0.98rem;
+    color: var(--text-muted);
+    line-height: 1.75;
+    margin: 0;
+    flex: 1;
+  }
+
+  .zinab-card-corner-deco {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 80px;
+    height: 80px;
+    pointer-events: none;
+  }
+
+  .zinab-card-corner-deco svg {
+    width: 100%;
+    height: 100%;
+  }
+
+  .cards-section-label {
+    text-align: center;
+    font-family: var(--font-heading);
+    font-size: 0.85rem;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+    color: var(--secondary);
+    margin-bottom: 3rem;
+    position: relative;
+    z-index: 10;
+  }
+
+  .cards-section-label::before,
+  .cards-section-label::after {
+    content: '—';
+    margin: 0 0.6em;
+    color: var(--border-light);
+  }
+
+  @media (max-width: 768px) {
+    .cards-section-zinab {
+      padding-top: 100px;
+    }
+
+    .cards-inner {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .zinab-card:nth-child(2) {
+      transform: translateY(0);
+    }
+
+    .zinab-card:nth-child(2):hover {
+      transform: translateY(-10px) rotate(0.5deg);
+    }
+
+    .zinab-card-body {
+      padding: 2rem 1.5rem 1.8rem;
+    }
+
+    .zinab-card-title {
+      font-size: 1.6rem;
+    }
+
+    .zinab-card-number {
+      font-size: 3.5rem;
+    }
+  }
+</style>
+
+<div class="cards-section-zinab">
+  <div class="cards-section-label">Boutique Zinab</div>
+  <div class="cards-inner">
+
+    <div class="zinab-card">
+      <span class="zinab-card-accent-bar"></span>
+      <div class="zinab-card-body">
+        <span class="zinab-card-number">01</span>
+        <h3 class="zinab-card-title">כותרת כרטיס 1</h3>
+        <div class="zinab-card-divider"></div>
+        <p class="zinab-card-text">טקסט תיאור כרטיס נמצא כאן</p>
+      </div>
+      <div class="zinab-card-corner-deco">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 80 Q40 40 80 0 L80 80 Z" fill="rgba(168,92,98,0.05)"></path>
+        </svg>
+      </div>
+    </div>
+
+    <div class="zinab-card">
+      <span class="zinab-card-accent-bar"></span>
+      <div class="zinab-card-body">
+        <span class="zinab-card-number">02</span>
+        <h3 class="zinab-card-title">כותרת כרטיס 2</h3>
+        <div class="zinab-card-divider"></div>
+        <p class="zinab-card-text">טקסט תיאור כרטיס נמצא כאן</p>
+      </div>
+      <div class="zinab-card-corner-deco">
+        <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M0 80 Q40 40 80 0 L80 80 Z" fill="rgba(185,167,146,0.08)"></path>
+        </svg>
+      </div>
+    </div>
+
+  </div>
+</div>
+</section><section id="layout-1773830640802-dup-1773830657264" class="layout-section" data-zappy-component="true" style="width: 100%; padding: 60px 0; direction: rtl; position: relative; overflow: hidden; background-color: #1F2328; --zappy-bg-color: #1F2328" data-component-id="card-hover-shadow" data-zappy-bg-type="color" data-zappy-bg-color="#1F2328" data-zappy-bg-image="" data-zappy-bg-overlay-color="#000000" data-zappy-bg-overlay-opacity="30" data-zappy-bg-video-type="" data-zappy-bg-video-url="">
+  <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 1.5rem;">
+  <div class="shadow-card-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
+    <div style="padding: 35px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 12px; transition: transform 0.3s;">
+      <h3 style="font-size: 22px; font-weight: 600; color: #1F2937; margin-bottom: 15px; font-family: Cormorant Garamond, Georgia, Times New Roman, serif;">כותרת כרטיס 1</h3>
+      <p style="font-size: 16px; line-height: 1.6; color: #1F2937; opacity: 0.8; font-family: Cormorant Garamond, Georgia, Times New Roman, serif;">טקסט תיאור כרטיס נמצא כאן</p>
+    </div>
+    <div style="padding: 35px; background: white; box-shadow: 0 4px 12px rgba(0,0,0,0.08); border-radius: 12px; transition: transform 0.3s;">
+      <h3 style="font-size: 22px; font-weight: 600; color: #1F2937; margin-bottom: 15px; font-family: Cormorant Garamond, Georgia, Times New Roman, serif;">כותרת כרטיס 2</h3>
+      <p style="font-size: 16px; line-height: 1.6; color: #1F2937; opacity: 0.8; font-family: Cormorant Garamond, Georgia, Times New Roman, serif;">טקסט תיאור כרטיס נמצא כאן</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+
       
   </main>
   <footer class="index-testimonials-attribution">
